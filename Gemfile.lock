@@ -1,0 +1,19 @@
+PATH
+  remote: .
+  specs:
+    capistrano_api_docs_external_git (1.0.0)
+      git
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    git (1.2.8)
+    rake (10.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.7)
+  capistrano_api_docs_external_git!
+  rake (~> 10.0)
