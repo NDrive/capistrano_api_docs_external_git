@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "capistrano_api_docs_external_git"
-  spec.version       = "1.0.3"
+  spec.version       = "1.0.4"
   spec.authors       = ["DevOps Team"]
   spec.email         = ["devops@ndrive.com"]
   spec.summary       = %q{Add tasks to capistrano to a Rails project to work with gem api_docs.}
@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'git', "~> 1.2"
+  spec.add_dependency 'capistrano', "~> 3.4"
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
