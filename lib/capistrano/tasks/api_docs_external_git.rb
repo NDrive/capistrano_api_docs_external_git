@@ -1,6 +1,10 @@
 namespace :api_docs_external_git do
+  def color
+    SSHKit::Color.new(Struct.new(:tty?).new(true))
+  end
+
   def print_message message
-    SSHKit.config.output << SSHKit::LogMessage.new(Logger::INFO, "[#{Color.green("unknown")}] #{message}")
+    SSHKit.config.output << SSHKit::LogMessage.new(Logger::INFO, "[#{color.colorize("unknown", :green)}] #{message}")
   end
 
   set :doc_git_repository, nil
